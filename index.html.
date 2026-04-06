@@ -23,7 +23,7 @@
     }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
     fbq('init', '1515966293431253');  // Tu Pixel real
-    fbq('track', 'Contact');
+    fbq('track', 'PageView');
   </script>
 </head>
 
@@ -31,9 +31,12 @@
   <h2>Contactar por WhatsApp</h2>
   <p>Haz clic en el botón para abrir WhatsApp:</p>
 
-  <button onclick="window.location.href='https://wa.me/525571473883';"
-          style="padding: 15px 25px; font-size: 18px; background-color: #25D366; color: white; border: none; border-radius: 8px; cursor: pointer;">
-    Abrir WhatsApp
-  </button>
+  <!-- Botón compatible con Android, iOS y escritorio -->
+  <a href="https://api.whatsapp.com/send?phone=525571473883" 
+     target="_blank" 
+     style="display: inline-block; padding: 15px 25px; font-size: 18px; background-color: #25D366; color: white; border-radius: 8px; text-decoration: none; cursor: pointer;"
+     onclick="fbq('track', 'Contact');">
+     Abrir WhatsApp
+  </a>
 </body>
 </html>
