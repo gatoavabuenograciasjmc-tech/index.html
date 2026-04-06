@@ -32,7 +32,7 @@
   <p>Haz clic en el botón para abrir WhatsApp:</p>
 
   <!-- Botón compatible con Android, iOS y escritorio -->
-  <a href="https://api.whatsapp.com/send?phone=525571473883" 
+  <a href="https://api.whatsapp.com/send?phone=527222044663" 
      target="_blank" 
      style="display: inline-block; padding: 15px 25px; font-size: 18px; background-color: #25D366; color: white; border-radius: 8px; text-decoration: none; cursor: pointer;"
      onclick="fbq('track', 'Contact');">
